@@ -1,0 +1,143 @@
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.breadcrumb{
+  padding: 0 0 0 20px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+}
+.main-content{
+  margin-top: 5px;
+  background: #fff;
+  height: 945px;
+  overflow: scroll
+}
+.content-input{
+  padding: 25px 0 29px 21px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-input-list.first li span{
+  display: inline-block;
+  width: 75px;
+}
+.content-input-list.second li span{
+  display: inline-block;
+  width: 44px;
+}
+.content-input-list.third li span{
+  display: inline-block;
+  width: 74px;
+}
+.content-input-list li {
+  margin: 0 30px 20px 0;
+}
+.select-status{
+  height: 30px;
+}
+.input-item{
+  width: 200px;
+}
+.content-input-list li input{
+  height: 30px;
+}
+.content-input-list li.search{
+  margin: 0 0 0 44px;
+  width: 136px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #CDAE63;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.input-time{
+  width: 100px;
+}
+.table{
+  margin: 0 0 0 20px;
+  width: 910px;
+}
+.table table{
+  width: 100%;
+  text-align: center;
+  color: #444;
+  /*border-right: 1px solid #DCDCDC;*/
+  /*border-left: 1px solid #DCDCDC;*/
+}
+.thead tr{
+  height: 40px;
+  background: #CDAE63;
+}
+.check-order{
+  display: flex;
+  justify-content: space-between;
+  /* float: right; */
+}
+.tbody {
+  width: 910px;
+}
+.tbody tr{
+  padding: 0 20px;
+}
+.buy-order-size{
+  float: left;
+}
+.order-time{
+  height: 30px;
+  float: right;
+}
+.tbody tr td{
+  padding: 30px 20px;
+  border-bottom: 1px solid #DCDCDC;
+}
+.tbody tr td:nth-child(4),
+.tbody tr td:nth-child(5),
+.tbody tr td:nth-child(6){
+   border-left: 1px solid #DCDCDC;
+ }
+.goods_info{
+  display: flex;
+}
+.td-left{
+  width: 80px;
+  height: 80px;
+  background: red;
+}
+.td-right{
+  text-align: left;
+  margin: 0 0 0 10px;
+}
+.td-right span{
+  display: block;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+.export{
+  text-align: right;
+}
+.export td{
+  padding: 20px 0 0 0;
+  border: none;
+}
+ tbody tr.order-info td{
+   padding: 20px 0 16px 0;
+ }
+.export td span{
+  margin: 10px 0 0 10px;
+  padding: 6px 25px;
+  border: 1px solid #d1d1d1;
+}
+.view-detail{
+  color: #CDAE63;
+}

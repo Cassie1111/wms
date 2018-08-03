@@ -1,0 +1,120 @@
+$theme-color: #cdae63;
+
+@mixin border-style {
+  border: 1px solid #d1d1d1;
+}
+
+.page-content {
+  height: 940px;
+  overflow: scroll;
+  padding: 20px 40px 0px 40px;
+  background: rgba(255, 255, 255, 1);
+
+  .header {
+    position: relative;
+    height: 30px;
+
+    .com-name {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 20px;
+      color: $theme-color;
+      line-height: 30px;
+    }
+    .el-input {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 270px;
+
+      .el-input__inner {
+        height: 30px;
+      }
+
+      .el-input__icon {
+        line-height: 30px;
+        &:hover {
+          cursor: pointer;
+          color: $theme-color;
+        }
+      }
+    }
+  }
+
+  .middle {
+    margin-top: 34px;
+
+    .account-stat {
+      display: inline-block;
+      width: 360px;
+      height: 180px;
+      color: #666;
+      @include border-style;
+
+      &-header {
+        height: 40px;
+        background: #f6f6f6;
+        text-align: center;
+        line-height: 40px;
+      }
+
+      &-body {
+        padding: 20px 30px;
+
+        .label {
+          display: inline-block;
+          width: 145px;
+          text-align: left;
+        }
+        .num {
+          display: inline-block;
+          width: 145px;
+          text-align: right;
+        }
+      }
+
+      &-item {
+        margin-bottom: 20px;
+      }
+    }
+
+    .btn-group {
+      display: inline-block;
+      padding: 62px 0 43px 90px;
+      vertical-align: top;
+      color: #666;
+
+      .new-account-btn {
+        width: 155px;
+        height: 75px;
+        padding: 0px 30px;
+        @include border-style;
+        border-radius: 5px;
+        line-height: 75px;
+        background: rgba(246,246,246,1);
+
+        &:hover {
+          color: $theme-color;
+          cursor: pointer;
+        }
+
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .account-list {
+    margin-top: 40px;
+    padding-bottom: 30px;
+
+    .operate-link {
+      margin-left: 10px;
+      color: $theme-color;
+      text-decoration: none;
+    }
+  }
+}

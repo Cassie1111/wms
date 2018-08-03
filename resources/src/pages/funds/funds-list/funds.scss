@@ -1,0 +1,138 @@
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb{
+  padding: 0 0 0 20px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+}
+.funds-content{
+  margin-top: 5px;
+  padding: 0 0 20px 0;
+  box-sizing: border-box;
+  width: 950px;
+  background: #fff;
+}
+.content-input{
+  padding: 25px 0 29px 21px;
+}
+.content-input-list{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.content-input-list li {
+  margin-right: 25px;
+  &:nth-child(3){
+    margin-right: 0;
+  }
+  &:nth-child(1) .el-input{
+    width: 200px;
+  }
+  &:nth-child(3) .el-input{
+    width: 130px;
+  }
+  span{
+    display: inline-block;
+    margin-right: 10px;
+    color: #424242;
+  }
+}
+.el-input__inner{
+  padding-right: 0;
+}
+.select-status{
+  height: 30px;
+}
+.input-item{
+  width: 200px;
+}
+.content-input-list li input{
+  height: 30px;
+}
+.search{
+  display: inline-block;
+  margin: 20px 20px 0 86px;
+  width: 136px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #CDAE63;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover{
+    opacity: .7;
+  }
+}
+.search-all{
+  display: inline-block;
+  font-size: 12px;
+}
+.table{
+  width: 100%;
+  table-layout:fixed;
+}
+.table table{
+  width: 100%;
+  text-align: center;
+  color: #444;
+}
+.thead{
+  background: rgba(205, 174, 99, 0.3);
+}
+.thead tr{
+  height: 40px;
+  color: #666;
+}
+.tbody tr{
+  height: 94px;
+}
+.tbody tr td{
+  border-bottom: 1px solid #DCDCDC;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.tbody tr td .supplier_name{
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.tbody tr.export{
+  height: 106px;
+  line-height: 106px;
+  text-align: right;
+}
+.tbody tr.export td{
+  padding: 0 25px;
+  cursor: pointer;
+}
+.tbody tr.export td span{
+  border: 1px solid #D1D1D1;
+  padding: 6px 25px;
+  cursor: pointer;
+  &:hover{
+    opacity: .7;
+  }
+}
+.link-active{
+  color: #CDAE63;
+}
+.el-pagination{
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+.noData{
+  display: inline-block;
+  width: 100%;
+  margin: 200px 0 0 0;
+  text-align: center;
+  color: #D1D1D1;
+}

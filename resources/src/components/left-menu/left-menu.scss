@@ -1,0 +1,67 @@
+.left-menu {
+  width: 240px;
+  margin-right: 10px;
+  border-right: 4px solid #cdae63;
+  background: rgba(255,255,255,1);
+
+  .menu-list {
+    width: 160px;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0;
+    border-bottom: 1px solid #dcdcdc;
+
+    .main-menu {
+      position: relative;
+      height: 20px;
+
+      .menu-icon {
+        position: absolute;
+        top: 2px;
+        display: inline-block;
+        margin-right: 10px;
+        width: 16px;
+        height: 16px;
+
+        img {
+          width: 100%;
+          vertical-align: top;
+        }
+      }
+
+      .menu-text {
+        position: absolute;
+        left: 26px;
+        line-height: 20px;
+
+        a {
+          font-size: 16px;
+          color: #333;
+          text-decoration: none;
+
+          &:hover {
+            color: #cdae63;
+          }
+        }
+      }
+    }
+
+    .sub-menu {
+      margin-left: 26px;
+      margin-top: 20px;
+      a {
+        font-size: 14px;
+        color: #666;
+        text-decoration: none;
+
+        &:hover {
+          color: #cdae63;
+        }
+      }
+    }
+  }
+}
+
+.router-link-active {
+  color: #cdae63 !important;
+}

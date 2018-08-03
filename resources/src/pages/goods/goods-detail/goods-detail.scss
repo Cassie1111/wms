@@ -1,0 +1,62 @@
+.main-content{
+  background:#fff;
+  padding-bottom:10px;
+  color:#666;
+  .bread-nav{
+    font-size:12px;
+    padding:10px 0 0 10px;
+  }
+  .edit-type{
+    color:#cdae63;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .btn-publish{
+    margin:40px 0;
+    width:200px;
+  }
+}
+.el-breadcrumb {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+}
+.content-header {
+  background: rgba(205, 174, 99, 0.3);
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  margin: 20px auto;
+}
+
+.no-popper-padding {
+  padding: 0;
+}
+.checklist-bg {
+  background: #fff;
+  width: 96%;
+  padding: 10px;
+}
+.brand-dialog .el-dialog__header {
+  border-bottom: 1px solid #ccc;
+}
+.color-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.el-icon-circle-plus {
+  font-size: 24px;
+  color: rgba(205, 174, 99, 1);
+}
+.table-row{
+  flex-wrap:wrap;
+  .half-width {
+    width:50%;
+    margin-bottom:10px;
+  }
+  .flex{
+    display:flex;
+  }
+}

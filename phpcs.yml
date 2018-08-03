@@ -1,0 +1,25 @@
+imports:
+    - { resource: 'vendor/symplify/easy-coding-standard/config/common.yml' }
+    - { resource: 'vendor/symplify/easy-coding-standard/config/symfony.yml' }
+    - { resource: 'vendor/symplify/easy-coding-standard/config/psr2.yml' }
+
+parameters:
+    exclude_checkers:
+        - 'PhpCsFixer\Fixer\Import\OrderedImportsFixer'
+        - 'PhpCsFixer\Fixer\Operator\UnaryOperatorSpacesFixer'
+        - 'PhpCsFixer\Fixer\FunctionNotation\VoidReturnFixer'
+        - 'PhpCsFixer\Fixer\Phpdoc\PhpdocNoEmptyReturnFixer'
+        - 'PhpCsFixer\Fixer\Comment\NoEmptyCommentFixer'
+        - 'PhpCsFixer\Fixer\Phpdoc\PhpdocAlignFixer'
+        - 'PhpCsFixer\Fixer\Phpdoc\PhpdocSeparationFixer'
+        - 'Symplify\CodingStandard\Fixer\Commenting\RemoveUselessDocBlockFixer'
+
+    skip:
+        PhpCsFixer\Fixer\Import\NoUnusedImportsFixer:
+            - 'app/Providers/AuthServiceProvider.php'
+
+services:
+    PhpCsFixer\Fixer\Operator\ConcatSpaceFixer:
+        spacing: none
+    PhpCsFixer\Fixer\Whitespace\BlankLineBeforeStatementFixer:
+        statements: ['if', 'for', 'foreach', 'while', 'do', 'switch', 'continue', 'declare', 'return', 'throw', 'try']

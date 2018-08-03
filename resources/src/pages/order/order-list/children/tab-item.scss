@@ -1,0 +1,124 @@
+table{
+  width: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+  /*border-right: 1px solid #DCDCDC;*/
+  /*border-left: 1px solid #DCDCDC;*/
+}
+.thead{
+  background: rgba(205, 174, 99, 0.3);
+}
+.thead tr{
+  height: 40px;
+}
+.check-order{
+  display: flex;
+  justify-content: space-between;
+  /* float: right; */
+}
+.tbody {
+  width: 910px;
+  .product-item td:first-child{
+    border-left: 1px solid #DCDCDC;
+  }
+  .product-item td:last-child{
+    border-right: 1px solid #DCDCDC;
+  }
+}
+.el-checkbox{
+  font-weight: normal;
+}
+.tbody tr{
+  padding: 0 20px;
+}
+.buy-order-size{
+  float: left;
+}
+.order-time{
+  height: 30px;
+  float: right;
+}
+.tbody tr td{
+  padding: 30px 20px;
+  border-bottom: 1px solid #DCDCDC;
+}
+.tbody tr td:nth-child(4),
+.tbody tr td:nth-child(5),
+.tbody tr td:nth-child(6){
+  border-left: 1px solid #DCDCDC;
+  font-size: 12px;
+  & b{
+    display: block;
+    font-weight: normal;
+    color: #CDAE63;
+  }
+}
+.tbody tr td:nth-child(6){
+  span{
+    display: block;
+    color: #999;
+    cursor: pointer;
+    &:hover{
+      color: #CDAE63;
+    }
+    &:nth-child(1){
+      margin: 0 0 5px 0;
+    }
+  }
+}
+.link-active{
+  display: inline-block;
+  margin: 5px 0 0 0;
+  color: #999;
+  &:hover{
+    color: #CDAE63;
+  }
+}
+.goods_info{
+  display: flex;
+}
+.td-left{
+  width: 80px;
+  height: 80px;
+}
+.td-left{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.td-right{
+  text-align: left;
+  font-size: 12px;
+  margin: 0 0 0 10px;
+  & span:nth-child(1){
+    margin: 0 0 16px;
+    color: #444444;
+  }
+}
+.td-right span{
+  display: block;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #666;
+}
+.export{
+  text-align: right;
+}
+.export td{
+  padding: 20px 0 0 0;
+  border: none;
+}
+tbody tr.order-info td{
+  padding: 20px 0 10px 0;
+}
+.export td span{
+  margin: 10px 0 0 10px;
+  padding: 6px 25px;
+  border: 1px solid #d1d1d1;
+}
+.view-detail{
+  color: #CDAE63;
+}

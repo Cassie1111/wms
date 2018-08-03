@@ -1,0 +1,22 @@
+$theme-color: #CDAE63;
+
+.page-content {
+  padding: 0 30px 0 40px;
+  min-height: 940px;
+  background-color: #fff;
+  &-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding:25px 0 10px;
+    .title {
+      padding-bottom: 10px;
+      font-size: 20px;
+      color: $theme-color;
+    }
+  }
+  .pagination {
+    padding: 20px 0;
+    text-align: center;
+  }
+}

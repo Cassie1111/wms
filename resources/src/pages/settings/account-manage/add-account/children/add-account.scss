@@ -1,0 +1,90 @@
+$theme-color: #cdae63;
+
+@mixin btn {
+  width: 140px;
+  height: 40px;
+  margin-right: 40px;
+  color: #FFF;
+  border: 0;
+  border-radius: 4px;
+}
+
+
+.form {
+  min-height: 1200px;
+  padding: 25px 40px 90px 40px;
+  background: rgba(255,255,255,1);
+
+  .form-title {
+    font-size: 20px;
+    color: $theme-color;
+  }
+
+  .form-body {
+    margin-top: 40px;
+
+    .block-label {
+      height: 40px;
+      padding-left: 30px;
+      color: #666;
+      line-height: 40px;
+      background: #f6f6f6;
+    }
+
+    .block-content {
+      padding: 20px 0 30px 0;
+
+      // 区号
+      .country-code {
+        display: inline-block;
+      }
+
+      // 手机号
+      .mobile {
+        display: inline-block;
+        margin-left: 17px;
+      }
+    }
+
+    // 提示框
+    .tips {
+      display: inline-block;
+      height: 24px;
+      line-height: 24px;
+      font-size: 0px;
+
+      .triangle {
+        display: inline-block;
+        width: 0px;
+        height: 0px;
+        margin-left: 20px;
+        vertical-align: top;
+        border: 12px solid transparent;
+        border-right-color: #f6f6f6;
+      }
+
+      .text {
+        display: inline-block;
+        padding: 0 10px 0px 8px;
+        color: #b5b5b5;
+        font-size: 12px;
+        background: #f6f6f6;
+      }
+    }
+  }
+}
+
+.form-btn-group {
+  margin-top: 90px;
+  text-align: center;
+}
+
+.submit-btn {
+  @include btn;
+}
+
+.cancel-btn {
+  @include btn;
+  border: 1px solid #999;
+  color: #999;
+}

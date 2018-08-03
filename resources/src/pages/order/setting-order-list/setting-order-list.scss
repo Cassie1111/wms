@@ -1,0 +1,128 @@
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.breadcrumb{
+  padding: 0 0 0 20px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+}
+//.page-content{
+//  padding: 0 20px 0 10px;
+//  box-sizing: border-box;
+//}
+.main-content{
+  margin-top: 5px;
+  padding: 0 0 20px 20px;
+  background: #fff;
+}
+.content-input{
+  padding: 10px 0 30px 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #424242;
+  box-sizing: border-box;
+
+  .el-input,.el-select {
+    width: 200px;
+  }
+}
+
+.content-input-list{
+  &:nth-child(1) li label{
+    display: inline-block;
+    width: 75px;
+  }
+  &:nth-child(2) li label{
+    display: inline-block;
+    width: 32px;
+  }
+  &:nth-child(3) li label{
+    display: inline-block;
+    width: 60px;
+  }
+  &:nth-child(3) li .el-input{
+    width: 135px;
+  }
+}
+.el-input__inner{
+  padding-right: 0;
+}
+.content-input-list li {
+  margin: 0 20px 20px 0;
+}
+.content-input-list:nth-child(3) li{
+  margin: 0 0 20px 0;
+}
+.select-status{
+  height: 30px;
+}
+.input-item{
+  width: 200px;
+}
+.content-input-list li input{
+  height: 30px;
+}
+.content-input-list li .search{
+  margin: 0 10px 0 0;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #CDAE63;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover{
+    opacity: .7;
+  }
+}
+.content-input-list li .search-all{
+ display: inline-block;
+ font-size: 12px;
+}
+.input-time{
+  width: 100px;
+}
+.table{
+  //margin: 0 0 0 10px;
+  width: 910px;
+}
+.tabs{
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid #CDAE63;
+  span{
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+      color: #CDAE63;
+    }
+  }
+}
+.active{
+  color: #CDAE63;
+  border: 2px solid #CDAE63;
+  border-bottom: 2PX solid #fff;
+}
+.el-pagination{
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+.noData{
+  width: 100%;
+  margin: 200px 0 0 0;
+  text-align: center;
+  color: #D1D1D1;
+}

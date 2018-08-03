@@ -1,0 +1,390 @@
+// 供应商端客服页面
+
+.service-page {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+
+  &-body {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+
+    // 左侧供应商列表
+    &>.chat-list {
+      width: 308px;
+    }
+
+    // 右侧聊天容器
+    &>.chat-container {
+      width: 890px;
+      letter-spacing: normal;
+      word-spacing: normal;
+      vertical-align: top;
+      font-size: 12px;
+      border-left: 1px solid #ddd;
+    }
+  }
+
+  // 当前登录的客服人员的头像、昵称
+  .owner {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    background-color: #cdae63;
+
+    &-avatar {
+      width: 50px;
+      height: 50px;
+      margin-left: 20px;
+      margin-right: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #cdae63;
+      border-radius: 4px;
+    }
+
+    &-nickname {
+      width: 228px;
+      height: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .tabs {
+    position: relative;
+
+    &-header {
+      height: 40px;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 10px;
+
+      .tabs-nav {
+        display: flex;
+        height: 100%;
+
+        .tabs-item {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-grow: 1;
+          width: 154px;
+          font-size: 14px;
+          color: #999;
+          cursor: pointer;
+
+          &.active {
+            color: #fff;
+            background-color: #cdae63;
+          }
+        }
+      }
+    }
+
+    &-content {
+      height: 100%;
+      overflow: hidden;
+
+      .tab-pane {
+        overflow-y: scroll;
+      }
+    }
+  }
+
+  // 左侧用户列表
+  .user {
+    display: flex;
+    align-items: center;
+    height: 71px;
+    border-bottom: 1px solid #ddd;
+
+    &.active {
+      background-color: #f5efe0;
+    }
+
+    &>.avatar {
+      width: 50px;
+      height: 50px;
+      margin-left: 10px;
+      margin-right: 10px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  // 左侧用户项：昵称、消息
+  .user-item {
+    width: 196px;
+
+    &-nickname, &-msg {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &-nickname {
+      font-size: 14px;
+      line-height: 14px;
+      color: #333;
+    }
+
+    &-msg {
+      font-size: 12px;
+      line-height: 14px;
+      color: #666;
+      margin-top: 8px;
+    }
+  }
+
+  // 左侧用户列表---内容区域
+  .tabs-content {
+    overflow: hidden;
+  }
+
+  .tab-pane {
+    height: 0;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+  }
+
+  // 搜索结果列表
+  .search-result {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  // 右侧聊天框整个区域
+  .dialogue-box {
+    //
+  }
+
+  // 聊天框标题
+  .dialogue-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 16px;
+    line-height: 12px;
+    color: #333;
+  }
+
+  // 聊天内容面板
+  .dialogue-body {
+    position: relative;
+    height: 9999px;
+    overflow: hidden;
+  }
+
+  // 消息历史记录区域
+  .dialog-box {
+    position: relative;
+    height: 9999px;
+    padding: 20px 20px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+
+    .no-more {
+      margin-bottom: 10px;
+      font-size: 12px;
+      text-align: center;
+      color: #999;
+    }
+  }
+
+  // 消息编辑、发送区域
+  .sendbox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 158px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+
+    // 工具栏：上传图片/...
+    &-bar {
+      display: flex;
+      height: 28px;
+      padding-top: 10px;
+      padding-left: 20px;
+    }
+
+    // textarea输入区
+    &-area {
+      position: relative;
+      height: 130px;
+      padding: 5px 174px 5px 20px;
+      overflow: hidden;
+      outline: none;
+
+      &>textarea {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        color: inherit;
+        border: none;
+        outline: none;
+        resize: none;
+      }
+    }
+  }
+
+  .chat-time {
+    margin: 20px auto;
+    line-height: 20px;
+    font-size: 12.5px;
+    color: #999;
+    text-align: center;
+    transform: scale(0.8)
+  }
+
+  .chat-others {
+    display: flex;
+    justify-content: flex-start;
+
+    .msg {
+      justify-content: flex-start;
+      margin-left: 12px;
+      background-color: #f1f1f1;
+      border: 1px solid #f1f1f1;
+
+      &>.icon {
+        left: -6px;
+      }
+    }
+  }
+
+  .chat-self {
+    display: flex;
+    justify-content: flex-end;
+
+    .msg {
+      justify-content: flex-end;
+      margin-right: 12px;
+      background-color: #9de358;
+      border: 1px solid #9de358;
+
+      &>.icon {
+        right: -6px;
+      }
+    }
+  }
+
+  .chat-content {
+    line-height: 16px;
+    font-size: 14px;
+
+    &>.avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 4px;
+      object-fit: contain;
+      overflow: hidden;
+    }
+
+    .chat-status {
+      display: flex;
+      align-items: center;
+      margin-right: 6px;
+    }
+
+    .msg {
+      position: relative;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      max-width: 600px;
+      line-height: 20px;
+      padding: 12px 14px;
+      border-radius: 4px;
+      word-wrap: break-word;
+      word-break: break-all;
+
+      &>.icon {
+        position: absolute;
+        top: 16px;
+        width: 6px;
+        height: 8px;
+      }
+    }
+  }
+
+  // icon上传图片
+  .icon-upload {
+    width: 20px;
+    height: 18px;
+    margin-right: 20px;
+    background-image: url("../../assets/images/pages/service/upload.png");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+
+    &:hover {
+      background-image: url("../../assets/images/pages/service/upload-hover.png");
+    }
+  }
+
+  // 发送按钮
+  .sendbox-btn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  // 图片上传区域
+  .upload-area {
+    position: relative;
+    cursor: pointer;
+
+    label {
+      width: 100%;
+      height: 100%;
+    }
+
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  // 覆盖element-ui button样式
+  .el-button {
+    width: 154px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .el-icon-warning {
+    color: #f56c6c;
+  }
+
+  .el-icon-loading {
+    color: #cdae63;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+  }
+}

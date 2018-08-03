@@ -1,0 +1,149 @@
+ul{
+  list-style: none;
+}
+.breadcrumb{
+  padding: 0 0 0 20px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  color: #222;
+  font-size: 14px;
+}
+.main-content{
+  margin-top: 5px;
+  padding: 0 20px;
+  background: #fff;
+  overflow: scroll;
+}
+.buy-detail-title{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px 20px 10px;
+  border-bottom: 1px solid #CACACA;
+  color: #444;
+}
+.buy-detail-size{
+  font-size: 18px;
+}
+.buy-detail-status span{
+  color: #CDAE63;
+}
+.buy-detail-info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0 0 10px;
+  font-size: 12px;
+}
+.buy-detail-info-time li b{
+  color: #666;
+}
+.buy-detail-info-time li span{
+  display: block;
+  color: #999999;
+}
+.buy-detail-info-time li{
+  margin: 0 0 28px 0;
+}
+.buy-detail-info-address{
+  width: 50%;
+  margin: 0 74px 0 0;
+  li{
+    padding: 10px 0 0 0;
+    color: #999;
+    &:nth-child(1){
+      color: #666;
+    }
+  }
+}
+.table{
+  width: 100%;
+}
+.detail-title{
+  padding: 0 0 0 10px;
+  color: #666;
+}
+.goods_info{
+  display: flex;
+  align-items: center;
+}
+.td-left{
+  width: 80px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #EDEDED;
+}
+.td-right{
+  width: 134px;
+  margin: 0 0 0 10px;
+}
+.td-right span{
+  display: block;
+  color: #666666;
+}
+.td-right span:nth-child(1){
+  color: #444444;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bill-money{
+  float: right;
+  color: #666;
+  font-size: 12px;
+}
+.bill-money ul li{
+  padding: 16px 0;
+  border-bottom: 1px solid #DCDCDC;
+}
+.bill-money ul li span:nth-child(2){
+  margin: 0 0 0 134px;
+}
+.order-handle {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 70px 0 0 0;
+  margin: 0 0 60px 0;
+
+  .handle-confirm {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 50px 0 0;
+    text-align: center;
+    color: #fff;
+    font-size: 14PX;
+    background: #cdae63;
+    border: 1PX solid #cdae63;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover{
+      opacity: .7;
+    }
+  }
+
+  .handle-print {
+    display: block;
+    width: 140px;
+    height: 40px;
+    padding: 0;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    color: #999;
+    font-size: 14PX;
+    background: #fff;
+    border: 1PX solid #999;
+    border-radius: 4px;
+
+    &:hover {
+      text-decoration: none;
+      opacity: .7;
+    }
+  }
+}

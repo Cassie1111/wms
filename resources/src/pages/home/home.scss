@@ -1,0 +1,193 @@
+@mixin box-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin block-header {
+  height: 40px;
+  background: #f4eedf;
+  padding-left: 20px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #333;
+}
+
+.supplier-info {
+  @include box-size(100%, 180px);
+
+  &-cube {
+    float: left;
+    @include box-size(470px, 100%);
+
+    .cube-icon {
+      float: left;
+      @include box-size(40px, 100%);
+      padding: 80px 11px;
+      background: #f4eedf;
+
+      img {
+        @include box-size(18px, 20px);
+      }
+    }
+
+    .cube-content {
+      float: left;
+      @include box-size(430px, 100%);
+      padding: 30px 50px;
+      font-size: 14px;
+      background: #fff;
+    }
+  }
+}
+.supplier-profile {
+  .com-name {
+    height: 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #666;
+  }
+
+  .com-email {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #999;
+  }
+
+  .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 22px;
+    color: #b5b5b5;
+
+    img {
+      @include box-size(100%, 100%);
+    }
+  }
+
+  .icon3 {
+    @include box-size(16px, 16px);
+  }
+
+  .icon4 {
+    @include box-size(20px, 15px);
+  }
+  .icon5 {
+    @include box-size(18px, 18px);
+  }
+
+}
+
+.finance-info {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666;
+
+  .wait-pay {
+    margin-bottom: 20px;
+
+    label {
+      margin-right: 10px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  .deposit {
+    margin-bottom: 30px;
+
+    label {
+      margin-right: 10px;
+    }
+  }
+
+  .jump {
+
+    a {
+      text-decoration: none;
+      color: #cdae63;
+    }
+
+    .separator {
+      margin: 0 20px;
+      color: #b5b5b5;
+    }
+  }
+
+}
+.bg-manage {
+  clear: both;
+  margin-top: 10px;
+
+  &-header {
+    @include block-header;
+  }
+  &-body {
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+    background: #fff;
+
+    .line {
+      margin: 20px 0px;
+      font-size: 0px;
+
+      a {
+        .line-item {
+          display: inline-block;
+          @include box-size(270px, 30px);
+          margin-right: 50px;
+          padding: 0 10px;
+          border: 1px solid #cacaca;
+          border-radius: 2px;
+          color: #666;
+          font-size: 14px;
+          line-height: 30px;
+
+          &:hover {
+            background: #f4eedf;
+          }
+
+          img {
+            width: 18px;
+            height: 18px;
+            margin-bottom: 5px;
+            vertical-align: middle;
+          }
+
+          .num {
+            float: right;
+          }
+        }
+
+        &:last-child {
+          .line-item {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.pay-list {
+  margin-top: 10px;
+
+  &-header {
+    @include block-header;
+  }
+
+  &-body {
+    min-height: 650px;
+    padding: 0px 20px 40px;
+    background: #fff;
+
+    .pagination {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+}

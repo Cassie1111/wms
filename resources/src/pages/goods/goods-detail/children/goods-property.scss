@@ -1,0 +1,10 @@
+.table-row{
+  flex-wrap:wrap;
+  .half-width {
+    width:50%;
+    margin-bottom:10px;
+  }
+  .flex{
+    display:flex;
+  }
+}

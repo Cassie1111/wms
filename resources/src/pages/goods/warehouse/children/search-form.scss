@@ -1,0 +1,61 @@
+.form-search {
+  padding-right:70px;
+  padding-left:10px;
+  .el-input__inner,.el-input__icon {
+    line-height: 30px;
+  }
+  .el-input,.el-select {
+    width: 200px;
+  }
+  .el-input__inner,
+  .el-button {
+    height: 30px;
+    border-radius: 2px;
+  }
+  .el-form--inline .el-form-item {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.form-search-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+
+  .full-width {
+    width: 100%;
+  }
+}
+.btn-search{
+  width:136px;
+  margin-left:60px;
+}
+.el-form--inline {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.form-item {
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &.flex-start {
+    justify-content: flex-start;
+    width:240px;
+
+    label {
+      margin-right: 10px;
+    }
+  }
+}
+.form-item label {
+  font-size: 14px;
+}
+.search-count{
+  font-size:12px;
+  color:#666;
+}

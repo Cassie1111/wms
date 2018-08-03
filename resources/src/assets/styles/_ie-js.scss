@@ -1,0 +1,20 @@
+// IE兼容性代码--基于JS插件
+
+// sticky
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.sticky:before,
+.sticky:after {
+  content: '';
+  display: table;
+}
+
+// flex
+.flex {
+  -js-display: flex;
+  display: flex;
+}

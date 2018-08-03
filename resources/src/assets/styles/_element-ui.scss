@@ -1,0 +1,62 @@
+// 覆盖一些element-ui样式
+
+/* 改变主题色变量 */
+$--color-primary: #cdae63;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+/* form 表单*/
+.el-form-item {
+  .el-form-item__label {
+    color: #666;
+    line-height: 30px;
+  }
+  .el-form-item__content {
+    line-height: 30px;
+  }
+}
+
+/* 文本框*/
+.el-input__inner {
+  height: 30px;
+  padding: 0 10px;
+  line-height: 30px;
+  border-color: #d1d1d1;
+  border-radius: 0;
+}
+
+.el-input__icon {
+  line-height: 30px;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-loading-mask {
+  z-index: 1998;
+}
+
+.el-pagination {
+  font-family: PingFang Sc,PingFangSC-Regular,Microsoft YaHei,Helvetica Neue,"sans-serif",Arial;
+  font-weight: 400;
+}
+
+.el-tooltip__popper {
+  &>div:first-child {
+    height:18px;
+  }
+}
+
+.el-tooltip {
+  &>pre {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
